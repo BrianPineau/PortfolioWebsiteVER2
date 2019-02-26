@@ -1,0 +1,146 @@
+
+/*  Universal  */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Titillium Web";
+}
+
+a,
+ul {
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('pictures/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    grid-template-columns: repeat(10, 6rem);
+    grid-template-rows: repeat(22, 6rem);
+    grid-gap: 0.5rem;
+}
+
+/*  Header Section  */
+
+header {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+}
+
+.inner-header {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.logo-container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo-container h1 {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    height: 100%;
+    
+}
+
+.header-nav {
+    float: right;
+    height: 100%;
+}
+
+.header-nav a {
+    display: table;
+    color: white;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.header-nav li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.header-nav a:last-child {
+    padding-right: 6px;
+}
+
+header a:hover {
+    color: red;
+    font-size: 1.1em;
+}
+
+/*  Banner Section */
+
+.banner {
+    grid-area: 2/1/6/12;
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+.banner-title {
+    grid-area: 3/2/5/12;
+    font-size: 64px;
+    margin: auto 0;
+}
+
+/*  About Me  */
+
+.about-me {
+    grid-area: 6/1/10/12;
+    background-color: rgba(250, 250, 250, 0.20);
+}
+
+/*  Skills */
+
+.skills {
+    grid-area: 10/1/12/12;
+    background-color: rgba(250, 250, 250, 0.20);
+    color: red;
+}
+
+/*  My Projects  */
+
+.my-projects {
+    grid-area: 12/1/16/12;
+    background-color: rgba(250, 250, 250, 0.20);
+}
+
+/*  Contact Me  */
+
+.contact-me {
+    grid-area: 16/1/20/12;
+    background-color: rgba(250, 250, 250, 0.20);
+}
+
+footer {
+    grid-area: 20/1/22/12;
+    background-color: rgba(250, 250, 250, 0.20)
+}
+
+
+
+
+
+
+
+
+
+
+
