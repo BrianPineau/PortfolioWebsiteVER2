@@ -32,9 +32,12 @@ ul {
 header {
     display: block;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
     width: 100%;
     height: 80px;
+    transition: 0.3s;
 }
 
 .inner-header {
@@ -48,6 +51,12 @@ header {
     height: 100%;
     display: table;
     float: left;
+}
+
+.logo-container img {
+    display: table-cell;
+    vertical-align: bottom;
+    height: 40px;
 }
 
 .logo-container h1 {
@@ -84,13 +93,14 @@ header {
 
 header a:hover {
     color: red;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 /*  Banner Section */
 
 .banner {
-    grid-area: 2/1/6/12;
+    grid-column: 1/-1;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.20);
 }
 
@@ -103,8 +113,10 @@ header a:hover {
 /*  About Me  */
 
 .about-me {
-    grid-area: 6/1/10/12;
+    grid-column: 1/13;
+    height: 70vh;
     background-color: rgba(250, 250, 250, 0.20);
+
 }
 
 .about-me-img {
@@ -132,7 +144,7 @@ header a:hover {
 /*  Skills */
 
 .skills-title {
-    grid-area: 10/5/11/8;
+    grid-column: 10/5/11/8;
     margin: 0 auto;
     z-index: 2;
 }
