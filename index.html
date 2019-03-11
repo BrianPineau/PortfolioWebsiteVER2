@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="resources/style.css"/>
         <link rel="stylesheet" type="text/css" href="resources/main.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
 
     
@@ -17,7 +18,7 @@
             <div class="inner-header">
                 <div class="logo-container">
                     <img src="resources/pictures/html.png">
-                    <h1 id="top-menu-title">My Portfolio</h1>
+                    <h2 id="top-menu-title">My Portfolio</h2>
                 </div>
                 <ul class="header-nav">
                     <a href="#"><li>HOME</li></a>
@@ -29,7 +30,7 @@
         </header>
 
 <!--  Banner Section  -->
-    <div class="container">    
+    <body class="container">    
         <div class="banner-box">
             <div class="banner"></div>
             <h1 class="banner-title">Hello and Welcome.</h1>
@@ -37,32 +38,54 @@
 <!--  About Me Section  -->
         <div class="about-me-box1">
             <div class="about-me-img"></div>
-            <h2 class="about-me-title">Developer.  Artist.  Enthusiast.</h2>
+            <h2 class="about-me-title">Developer.  Illustrator.  Enthusiast.</h2>
         </div>
         <div class="about-me-paragraph">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nam id numquam placeat repudiandae quidem temporibus animi saepe! Voluptate quod a corrupti, magnam totam soluta eligendi officiis est unde similique distinctio facilis illo. Labore provident suscipit saepe officia, atque illum, rem quam tempora, alias esse sunt. Possimus qui itaque est error labore iusto provident veniam nobis eum saepe, fugiat officia iure consequuntur, odit reprehenderit a eaque odio ut, repellat accusamus ad dolor repellendus tempora!</p>
         </div>
+        
 <!--  Skills  -->
         <h2 class="skills-title">Skills</h2>
         <div class="skills-box"></div>
         <ul class="skills">
-            <li>HTML<img src="resources/pictures/html.png"></li>
-            <li>CSS<img src="resources/pictures/file.png"></li>
-            <li>JavaScript<img src="resources/pictures/javascript.png"></li>
-            <li>Photoshop<img src="resources/pictures/psd.png"></li>
+            <li>HTML<img src="resources/pictures/html.png" alt="html icon"></li>
+            <li>CSS<img src="resources/pictures/file.png" alt="css icon"></li>
+            <li>JavaScript<img src="resources/pictures/javascript.png" alt="javascript icon"></li>
+            <li>Photoshop<img src="resources/pictures/psd.png" alt="photoshop icon"></li>
         </ul>
 
 <!-- My Projects Section -->  
         <h2 class="projects-title">My Projects</h2>
         <div class="projects-box">
-            <div class="individual-project-box box1"></div>
-            <div class="individual-project-box box2"></div>
-            <div class="individual-project-box box3"></div>
+            <div class="individual-project-box box1">
+              <div class="bottom-half-box">
+                <div class="icon-box">
+                  <img src="resources/pictures/portfolio.png" class="project-img" alt="portfolio">
+                </div>
+              </div>   
+            </div>
+              
+
+            <div class="individual-project-box box2">
+              <div class="bottom-half-box">
+                <div class="icon-box">
+                  <img src="resources/pictures/portfolio.png" class="project-img" alt="portfolio">             
+                </div>
+              </div>
+            </div>
+
+            <div class="individual-project-box box3">
+              <div class="bottom-half-box">
+                <div class="icon-box">
+                  <img src="resources/pictures/portfolio.png" class="project-img" alt="portfolio">             
+                </div>
+              </div>
+            </div>
+
         </div>
 
 <!--  Contact Form Section-->
 
-        <div class="contact-form">
             <form id="contact-form" method="post" action="contact-form.php">
                 <input name="name" type="text" class="form-control" placeholder="Your Name" required>
                 <br>
@@ -72,7 +95,6 @@
                 <br>
                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
             </form>
-        </div>
 
 <!--  Footer Section-->
         <footer>
@@ -84,7 +106,9 @@
             <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
             <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </footer>
-    </div>
+    </body>
 
 </html>

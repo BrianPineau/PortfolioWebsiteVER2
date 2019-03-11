@@ -15,14 +15,17 @@ ul {
     text-decoration: none;
 }
 
-.container {
-    display: grid;
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('pictures/banner.jpg');
+body {
+    background: linear-gradient(rgba(255, 255, 255,0.75), rgba(255, 255, 255, 0.75)), url('pictures/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.container {
+    
 }
 
 /*  Header Section  */
@@ -34,7 +37,8 @@ header {
     left: 0;
     z-index: 1000;
     width: 100%;
-    height: 80px;
+    height: 40px;
+    background-color: #3B5998;
     transition: 0.3s;
 }
 
@@ -46,9 +50,7 @@ header {
 }
 
 .logo-container {
-    height: 100%;
-    display: table;
-    float: left;
+    display: inline-flex;
 }
 
 .logo-container img {
@@ -57,12 +59,9 @@ header {
     height: 40px;
 }
 
-.logo-container h1 {
-    display: table-cell;
-    vertical-align: middle;
+.logo-container h2 { 
     color: white;
     height: 100%;
-    
 }
 
 .header-nav {
@@ -72,7 +71,7 @@ header {
 
 .header-nav a {
     display: table;
-    color: white;
+    color: #46484A;
     height: 100%;
     float: left;
     padding: 0;
@@ -98,48 +97,55 @@ header a:hover {
 
 .banner-box {
     grid-column: 1/-1;
-    height: 100vh;
-    margin-top: 80px;
-    background-color:red;
+    height: 80vh;
+    margin-top: 40px;
+    background-color:#3B5998;
 }
 
 .banner-title {
-    grid-column: 2/12;
-    font-size: 64px;
+    font-size: 6rem;
     line-height: 100%;
+    color: white;
 }
 
 /*  About Me  */
 
 .about-me-box1 {
     grid-column: 1/6;
+    height: 450px;
+    margin: 250px 0;
+    align-items: center;
 }
 
 .about-me-img {
   width: 450px;
   height: 450px;
   background-color: white;
-  border: 2px solid red;  
+  border: 2px solid #CCCCCC;  
   border-radius: 50%;
-  margin: 2rem;
+  margin-left: 2rem;
 }
 
 .about-me-title {
     position: relative;
     top: -120px;
     left: 200px;
-    background-color: blue;
+    color: #46484A;
     margin: auto 0;
     font-size: 32px;
 }
 
 .about-me-paragraph {
-    grid-column: 8/12;
-    height: 50%;
-    margin: auto 2rem auto 0;
-    border: 2px solid red;
+    grid-column: 7/12;
+    display: flex;
+    align-items: center;
+    margin: 250px 0;
 }
 
+.about-me-paragraph p {
+    height: 50%;
+    border: 2px solid #CCCCCC;
+}
 
 
 /*  Skills */
@@ -148,34 +154,31 @@ header a:hover {
     grid-column: 1/-1;
     margin: 0 auto;
     z-index: 2;
-    color: white;
+    font-size: 40px;
 }
 
-.skills-box {
-    grid-column: 1/-1;
-    background-color: rgba(250, 250, 250, 0.20);
-}
 
 .skills {
     grid-column: 2/12;
+    height: 30vh;
     display: inline-flex;
     justify-content: space-around;
     width: 100%;
-    background-color: red;
-    margin: auto;
+    margin: 60px auto;
 }
 
 .skills li {
     display: flex;
     flex-direction: column;
     display: inline-flex;
-    margin: 0 6rem;
     text-align: center;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .skills img {
-    height: 60px;
+    height: 200px;
+    width: 200px;
 }
 
 
@@ -191,26 +194,49 @@ header a:hover {
 
 .projects-box {
     grid-column: 1/-1;
+    height: 50vh;
     display: inline-flex;
     justify-content: space-around;
 }
 
 .individual-project-box {
-    background-color: greenyellow;
-    height: 350px;
+    display: flex;
+    align-items: end;
+    background-color:lightgray;
+    height: 400px;
     width: 25vw;
     border: 2px solid red;
 }
 
-/*  Contact Form  */
-
-.contact-form {
-    grid-column: 1/12;
-    background-color: rgba(250, 250, 250, 0.20);
+.bottom-half-box {
+    background-color: white;
+    width: 100%;
+    height: 50%;  
+    border-top: 4px solid red;
 }
 
+.icon-box {
+    position: relative;
+    top: -40px;
+    left: 36%;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 100;
+    height: 80px;
+    width: 80px;
+}
+
+.project-img {
+    height: 80%;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+/*  Contact Form  */
+
 form {
-    margin: 50px;
+    grid-column: 7/-1;
+    margin: 50px auto;
 }
 
 .form-control {
@@ -251,7 +277,8 @@ form .submit:hover {
 
 footer {
     grid-column: 1/12;
-    background-color: rgba(250, 250, 250, 0.20)
+    background-color: rgba(250, 250, 250, 0.20);
+    font-size: 12px;
 }
 
 
